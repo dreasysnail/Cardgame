@@ -21,6 +21,10 @@
 		7843B026199EFF4B008F8246 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7843B008199EFF4B008F8246 /* UIKit.framework */; };
 		7843B02E199EFF4B008F8246 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7843B02C199EFF4B008F8246 /* InfoPlist.strings */; };
 		7843B030199EFF4B008F8246 /* CardgameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843B02F199EFF4B008F8246 /* CardgameTests.m */; };
+		7843B03B199EFFA2008F8246 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843B03A199EFFA2008F8246 /* Card.m */; };
+		7843B03E199EFFB4008F8246 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843B03D199EFFB4008F8246 /* Deck.m */; };
+		7843B041199EFFC6008F8246 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843B040199EFFC6008F8246 /* PlayingCard.m */; };
+		7843B044199F1BA9008F8246 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843B043199F1BA9008F8246 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		7843B02B199EFF4B008F8246 /* CardgameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CardgameTests-Info.plist"; sourceTree = "<group>"; };
 		7843B02D199EFF4B008F8246 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7843B02F199EFF4B008F8246 /* CardgameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardgameTests.m; sourceTree = "<group>"; };
+		7843B039199EFFA2008F8246 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		7843B03A199EFFA2008F8246 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		7843B03C199EFFB4008F8246 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		7843B03D199EFFB4008F8246 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		7843B03F199EFFC6008F8246 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		7843B040199EFFC6008F8246 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		7843B042199F1BA9008F8246 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		7843B043199F1BA9008F8246 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,14 @@
 			children = (
 				7843B013199EFF4B008F8246 /* CardGameAppDelegate.h */,
 				7843B014199EFF4B008F8246 /* CardGameAppDelegate.m */,
+				7843B039199EFFA2008F8246 /* Card.h */,
+				7843B03A199EFFA2008F8246 /* Card.m */,
+				7843B03C199EFFB4008F8246 /* Deck.h */,
+				7843B03D199EFFB4008F8246 /* Deck.m */,
+				7843B03F199EFFC6008F8246 /* PlayingCard.h */,
+				7843B042199F1BA9008F8246 /* PlayingCardDeck.h */,
+				7843B043199F1BA9008F8246 /* PlayingCardDeck.m */,
+				7843B040199EFFC6008F8246 /* PlayingCard.m */,
 				7843B016199EFF4B008F8246 /* Main.storyboard */,
 				7843B019199EFF4B008F8246 /* CardGameViewController.h */,
 				7843B01A199EFF4B008F8246 /* CardGameViewController.m */,
@@ -250,9 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7843B041199EFFC6008F8246 /* PlayingCard.m in Sources */,
+				7843B03E199EFFB4008F8246 /* Deck.m in Sources */,
 				7843B015199EFF4B008F8246 /* CardGameAppDelegate.m in Sources */,
 				7843B01B199EFF4B008F8246 /* CardGameViewController.m in Sources */,
+				7843B044199F1BA9008F8246 /* PlayingCardDeck.m in Sources */,
 				7843B011199EFF4B008F8246 /* main.m in Sources */,
+				7843B03B199EFFA2008F8246 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
