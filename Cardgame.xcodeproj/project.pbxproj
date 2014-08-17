@@ -25,6 +25,7 @@
 		7843B03E199EFFB4008F8246 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843B03D199EFFB4008F8246 /* Deck.m */; };
 		7843B041199EFFC6008F8246 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843B040199EFFC6008F8246 /* PlayingCard.m */; };
 		7843B044199F1BA9008F8246 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843B043199F1BA9008F8246 /* PlayingCardDeck.m */; };
+		7843B048199FF71E008F8246 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7843B047199FF71E008F8246 /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		7843B040199EFFC6008F8246 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		7843B042199F1BA9008F8246 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		7843B043199F1BA9008F8246 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		7843B046199FF71E008F8246 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		7843B047199FF71E008F8246 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,14 +129,7 @@
 			children = (
 				7843B013199EFF4B008F8246 /* CardGameAppDelegate.h */,
 				7843B014199EFF4B008F8246 /* CardGameAppDelegate.m */,
-				7843B039199EFFA2008F8246 /* Card.h */,
-				7843B03A199EFFA2008F8246 /* Card.m */,
-				7843B03C199EFFB4008F8246 /* Deck.h */,
-				7843B03D199EFFB4008F8246 /* Deck.m */,
-				7843B03F199EFFC6008F8246 /* PlayingCard.h */,
-				7843B042199F1BA9008F8246 /* PlayingCardDeck.h */,
-				7843B043199F1BA9008F8246 /* PlayingCardDeck.m */,
-				7843B040199EFFC6008F8246 /* PlayingCard.m */,
+				7843B045199FE4EE008F8246 /* model */,
 				7843B016199EFF4B008F8246 /* Main.storyboard */,
 				7843B019199EFF4B008F8246 /* CardGameViewController.h */,
 				7843B01A199EFF4B008F8246 /* CardGameViewController.m */,
@@ -170,6 +166,23 @@
 				7843B02C199EFF4B008F8246 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7843B045199FE4EE008F8246 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7843B039199EFFA2008F8246 /* Card.h */,
+				7843B03A199EFFA2008F8246 /* Card.m */,
+				7843B03C199EFFB4008F8246 /* Deck.h */,
+				7843B03D199EFFB4008F8246 /* Deck.m */,
+				7843B046199FF71E008F8246 /* CardMatchingGame.h */,
+				7843B047199FF71E008F8246 /* CardMatchingGame.m */,
+				7843B03F199EFFC6008F8246 /* PlayingCard.h */,
+				7843B042199F1BA9008F8246 /* PlayingCardDeck.h */,
+				7843B043199F1BA9008F8246 /* PlayingCardDeck.m */,
+				7843B040199EFFC6008F8246 /* PlayingCard.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 				7843B03E199EFFB4008F8246 /* Deck.m in Sources */,
 				7843B015199EFF4B008F8246 /* CardGameAppDelegate.m in Sources */,
 				7843B01B199EFF4B008F8246 /* CardGameViewController.m in Sources */,
+				7843B048199FF71E008F8246 /* CardMatchingGame.m in Sources */,
 				7843B044199F1BA9008F8246 /* PlayingCardDeck.m in Sources */,
 				7843B011199EFF4B008F8246 /* main.m in Sources */,
 				7843B03B199EFFA2008F8246 /* Card.m in Sources */,
@@ -481,6 +495,7 @@
 				7843B035199EFF4B008F8246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7843B036199EFF4B008F8246 /* Build configuration list for PBXNativeTarget "CardgameTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +504,7 @@
 				7843B038199EFF4B008F8246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

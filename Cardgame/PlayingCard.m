@@ -10,6 +10,20 @@
 
 @implementation PlayingCard
 
+- (int)match:(NSArray *)otherCards{
+    int score = 0;
+    for (PlayingCard * card in otherCards) {
+        if (card.rank == self.rank) {
+            score = MAX(4, score);
+        }
+        else if ([card.suit isEqualToString:self.suit]) {
+            score = MAX(1, score);
+        }
+    }
+    return score;
+}
+
+
 -(NSString *)contents
 {
     //return [NSString stringWithFormat:@"%d%@", self.rank, self.suit];
@@ -27,7 +41,7 @@
 
 //make it private
 + (NSArray *)rankStrings{
-    return @[@"?",@"A",@"2",@"3",@"4",,@"5",@"6",@"7",@"8",@"9",@"10",@"J",@"Q",@"K"];
+    return @[@"?",@"A",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"J",@"Q",@"K"];
 }
 
 + (NSUInteger)maxRank { return [[self rankStrings] count]-1; }

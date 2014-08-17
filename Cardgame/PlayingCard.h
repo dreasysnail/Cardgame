@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class Card;
+#import "Card.h"
 
 @interface PlayingCard : Card
 
@@ -16,10 +16,10 @@
 
 @property NSString *suit;
 
-@property NSUInteger rank;
+@property (nonatomic) NSUInteger rank;
 
 + (NSArray *)validSuits;
 + (NSUInteger)maxRank;
-
+//do not redeclare overridden methods
 
 @end

@@ -9,12 +9,13 @@
 #import "Deck.h"
 
 @interface Deck()
-@property NSMutableArray *cards;
+@property (nonatomic) NSMutableArray *cards;
 
 @end
 
 @implementation Deck
 
+//initiate at application of obj
 -(NSMutableArray *)cards{
     if (!_cards) {
         _cards = [[NSMutableArray alloc] init];
@@ -37,10 +38,13 @@
 }
 
 -(Card *)drawRandomCard{
-    unsigned idx = arc4random()%[self.cards count];
-    [self.cards removeObjectAtIndex:idx];
-    return self.cards[idx];
-    
+    if ([self.cards count]) {
+        unsigned idx = arc4random()%[self.cards count];
+        Card *tmpCard = self.cards[idx];
+        [self.cards removeObjectAtIndex:idx];
+        return tmpCard;
+    }
+    return nil;
 }
 
 
