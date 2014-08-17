@@ -17,7 +17,8 @@
 //private
 
 @property (strong,nonatomic) CardMatchingGame *game;
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;//no order
+// do not change the name!!!
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButton;//no order
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @end
@@ -25,13 +26,13 @@
 @implementation CardGameViewController
 
 -(CardMatchingGame *)game{
-    if(!_game) _game = [[CardMatchingGame alloc] init:[self.cardButtons count] usingDesk:[[PlayingCardDeck alloc] init]];
+    if(!_game) _game = [[CardMatchingGame alloc] init:[self.cardButton count] usingDesk:[[PlayingCardDeck alloc] init]];
     return _game;
 }
 
 
 
-- (IBAction)touchCardButton:(UIButton *)sender {
+- (IBAction)touchcardButton:(UIButton *)sender {
 //    if ([sender.currentTitle length]!=0){
 //        UIImage *cardImage = [UIImage imageNamed:@"duke_sm"];
 //        [sender setBackgroundImage:cardImage forState:UIControlStateNormal]; //normal state
@@ -45,15 +46,15 @@
 //        }
 //    }
 
-    int chosenButtonIndex = [self.cardButtons indexOfObject:sender];
+    int chosenButtonIndex = [self.cardButton indexOfObject:sender];
     [self.game ChooseCardAtIndex:chosenButtonIndex];
     [self updateUI];
 
 }
 
 -(void)updateUI{
-    for (UIButton *cardButton in self.cardButtons) {
-        int cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
+    for (UIButton *cardButton in self.cardButton) {
+        int cardButtonIndex = [self.cardButton indexOfObject:cardButton];
         Card *card = [self.game CardAtIndex:cardButtonIndex];
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
